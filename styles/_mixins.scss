@@ -1,0 +1,58 @@
+@mixin img-size{
+  width:100%;
+  height:100%;
+}
+@mixin space-between{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+@mixin btn{
+  padding: 18px 28px;
+  letter-spacing: 1px;
+  background: #947a3c;
+  border:none;
+  cursor: pointer;
+  color:#fff;
+  transition: all 0.5s ease-out;
+  background:linear-gradient(to bottom,#27180e  50%,  #947a3c 50%);
+  background-size:100% 200% ;
+  background-position: bottom;
+}
+@mixin column{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@mixin btn-hover{
+  background-position: top;
+  //background: #27180e;
+  //transition: 0.4s;
+}
+@mixin desc-relative{
+  position: relative;
+  padding:$text-padding;
+  text-align: center;
+}
+@mixin desc-number{
+  font-family:$font;
+  color: #e0d6ca;
+  font-size:80px;
+}
+@mixin desc-head{
+  font-family:$font;
+  letter-spacing: 2px;
+  font-weight: 400;
+  position: absolute;
+  font-size:30px;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+@mixin center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
